@@ -1,0 +1,18 @@
+* {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+
+}
+
+
+
+body {
+background-image: url("./images/Pano_.jpg");
+background-repeat: no-repeat;
+background-position: center ;
+background-size: cover;
+
+
+}
+    
