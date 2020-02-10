@@ -17,7 +17,6 @@ body{
     text-align: center;
     color: #fdfffc;
 
-
 }
 
 
@@ -31,4 +30,32 @@ body{
     text-align: center;
     display: inline-block;
     color: #fdfffc;
+}
+
+.projects{
+    text-align: center;
+    color: #fdfffc;
+}
+
+.Current Projects{
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    color: #fdfffc;
+}
+
+.pic{
+
+    text-align: center;
+    justify-content: center;
+    padding: 25px 10x;
+    margin: 10px;
+}
+
+.footer {
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fdfffc;
+    margin: 50px;
+
 }
