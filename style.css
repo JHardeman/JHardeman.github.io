@@ -48,7 +48,7 @@ margin-top: 30px;
 
 .logo img{
 
-    width: 125px;
+    width: 150px;
     height: auto;
     float: left;
 }
@@ -78,7 +78,6 @@ margin-top: 0px;
 
 h1{
     color: #fdfffc;
-    font-family: 'Audiowide', Roboto , sans-serif ;
     text-transform: uppercase;
     font-size: 70px;
     text-align: center;

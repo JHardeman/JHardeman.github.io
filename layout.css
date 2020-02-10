@@ -3,3 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-image: url("./images/JS-background.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bio__header{
+    display: inline-block;
+    justify-content: left;
+    text-align: center;
+    color: #fdfffc;
+
+
+}
+
+
+.bio{
+    text-align: center;
+    color: #fdfffc;
+}
+
+.biography {
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    color: #fdfffc;
+}
