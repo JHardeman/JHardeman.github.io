@@ -1,86 +1,285 @@
 * {
-
-margin: 0px;
-padding: 0px;
-
-}
-
-header{
-    background-image: url("./images/JS-background.webp");
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #landing {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-}
-    
-.main-nav{
-
-float: right;
-list-style: none;
-margin-top: 30px;
-
-}
-
-.main-nav li{
-
+    height: 100vh;
+    padding: 100px 20px;
+  }
+  
+  #header {
+    padding: 15px;
+    background-color:#011627;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    opacity: .88;
+  }
+  
+  #header h2 {
+    cursor: default;
+    color:#FDFFFC;
+  }
+  
+  #links {
+    margin-right: 20px;
+  }
+  
+  #links ul li {
     display: inline-block;
-}
-
-.main-nav li a{
-
-    color: #fdfffc;
+  }
+  
+  #links ul li a {
+    padding: 10px;
     text-decoration: none;
-    padding: 5px 20px;
-    font-family: 'Audiowide', Roboto , sans-serif ;
-    font-size: 15px;
-    
-
-}
-
-.main-nav li.active a{
-
-    border: 1px solid #fdfffc;
-}
-
-.main-nav li a:hover{
-
-    border: 1px solid #fdfffc;
-}
-
-.logo img{
-
-    width: 150px;
-    height: auto;
-    float: left;
-}
-
-body{
-    font-family: 'Audiowide', Roboto , sans-serif ;
-
-}
-
-.row{
-
-    max-width: 1200px;
+    color:#FDFFFC;
+    border-bottom: 0px solid #FDFFFC;
+    transition: border 150ms, padding 150ms;
+  }
+  
+  #links ul li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+  }
+  
+  .profCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
-}
-
-.hello{
-
-position: absolute;
-/* width: 1200px; */
-margin-left: 0;
-margin-top: 0px;
-
-/* Cannot center "Welcome" on Home page without preventing you from selecting the links in nav row */
-
-
-}
-
-h1{
-    color: #fdfffc;
-    text-transform: uppercase;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 275px;
-
-}
+    width: 70%;
+    padding: 50px 15px;
+    background-color: gray;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px black;
+  }
+  
+  .profCard img {
+    margin-top: 75px;
+    rotate: 90deg;
+    height: 250px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgb(46, 46, 46);
+  }
+  
+  .info {
+    width: 60%;
+    padding: 10px;
+  }
+  
+  .info p {
+    padding: 10px 0;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .socialLinks a {
+    color: #011627;
+    transition: color 200ms;
+  }
+  
+  .socialLinks a:hover {
+    color: #FDFFFC;
+  }
+  
+  .socialLinks a:active {
+    color: white;
+  }
+  
+  .projects {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+  
+  .projects h1 {
+    margin-bottom: 50px;
+    border-bottom: 2px solid black;
+    color: black;
+  }
+  
+  .proj {
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .projInfo {
+    padding: 20px;
+  }
+  
+  .projInfo h2 {
+     margin-bottom: 15px;
+  }
+  
+  .proj img {
+    width: 75%;
+    /* align-self: flex-start; */
+  }
+  
+  #skills {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/java-syntax.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 100px 20px;
+  }
+  
+  .skills_Card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    padding: 50px 15px;
+    background-color: gray;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px black;
+  }
+  
+  .skills_Card img {
+    height: 250px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgb(46, 46, 46);
+  }
+  
+  .skills_info {
+    width: 60%;
+    padding: 10px;
+  }
+  
+  .skills_info p {
+    padding: 10px 0;
+  }
+  
+  
+  
+  #contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: rgb(78, 78, 78);
+  }
+  
+  #contact h1 {
+    margin-bottom: 50px;
+    color: #FDFFFC;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    outline: none;
+  }
+  
+  button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    background-color: #FDFFFC;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+    transition: box-shadow 150ms, background-color 150ms, color 150ms;
+  }
+  
+  button:active {
+    box-shadow: none;
+    background-color: #011627;
+    
+  }
+  
+  #contact img {
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px black;
+  }
+  
+  footer {
+    padding: 10px;
+    background-color: #011627;
+  }
+  
+  footer p {
+    color: #FDFFFC;
+    width: fit-content;
+    margin-left: auto;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #landing {
+        padding: 80px 20px;
+    }
+    .profCard {
+        width: 90%;
+        padding: 20px;
+    }
+    .info {
+        width: 100%;
+    }
+    #header h2, #links {
+        margin: auto;
+    }
+    #links ul li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 12px;
+    }
+    .info h2 {
+        display: none;
+    }
+    .profCard img {
+        height: 200px;
+    }
+    .projects {
+        padding: 20px;
+    }
+    .proj {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .proj2 {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    .proj img {
+        margin: auto;
+        width: 100%;
+    }
+    #skills {
+      padding: 80px 20px;
+  }
+  .skills_Card {
+    width: 90%;
+    padding: 20px;
+  }
+  .skills_Card img {
+    height: 200px;
+  }
+    #contact img {
+        display: none;
+    }
+  }
